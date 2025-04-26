@@ -191,9 +191,11 @@ const TranscriptCertificate = () => {
 
       {/* Certificate Preview Section */}
       <div ref={certificateRef} className="certificate-preview">
-        <div className="certificate-watermark-text">
-          BRIGHT HORIZON <br /> INSTITUTE
+        <div className="certificate-watermark">
+          <img src={logo} alt="Watermark Logo" className="watermark-logo" />
+          <div className="watermark-text">BRIGHT HORIZON INSTITUTE</div>
         </div>
+
         <div className="certificate-logo-container">
           <img src={logo} alt="Institute Logo" className="certificate-logo" />
         </div>

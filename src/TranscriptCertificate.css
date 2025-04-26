@@ -229,21 +229,25 @@
 }
 
 /* Watermark Text */
-.certificate-watermark-text {
+.certificate-watermark {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 90px;
-  color: #000;
-  opacity: 0.05;
-  white-space: nowrap;
-  z-index: 0;
-  pointer-events: none;
-  user-select: none;
-  font-weight: 900;
-  font-family: "Outfit", sans-serif;
+  transform: translate(-50%, -50%);
+  opacity: 0.08; /* Light transparency */
   text-align: center;
+  z-index: 0; /* Behind everything */
+}
+
+.watermark-logo {
+  width: 500px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.watermark-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000;
   line-height: 1.2;
 }
 
