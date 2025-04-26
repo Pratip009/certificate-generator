@@ -1,0 +1,256 @@
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  font-family: "Georgia", serif;
+  background-color: #f7f9fc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Title */
+.container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Form Section */
+.form-section {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.form-section input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.add-course-btn,
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-btn:hover,
+.download-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Certificate Preview */
+.certificate-preview {
+  background: white;
+  padding: 50px 40px;
+  border: 3px solid #4a90e2;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Certificate Border Decoration */
+.certificate-preview::before,
+.certificate-preview::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  background: #4a90e2;
+  top: 0;
+  left: 0;
+}
+
+.certificate-preview::after {
+  top: auto;
+  bottom: 0;
+}
+
+/* Logo */
+.certificate-logo-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.certificate-logo {
+  width: 120px;
+  max-width: 100%;
+}
+
+/* Headings */
+.certificate-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+.certificate-subtitle {
+  text-align: center;
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+/* Fixed Details */
+.fixed-details {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* Student Info */
+.certificate-info {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.certificate-info p {
+  margin: 6px 0;
+}
+
+/* Courses Table */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 15px;
+  table-layout: fixed;
+}
+
+.courses-table th,
+.courses-table td {
+  border: 1px solid #bbb;
+  padding: 10px 12px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.courses-table th {
+  background-color: #eaf6ff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Grading Scale Table */
+.grading-scale-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+.grading-scale-table td {
+  border: 1px solid #bbb;
+  padding: 8px 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.grading-scale-table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Totals Section */
+.totals {
+  margin-top: 25px;
+}
+
+.totals input {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Course Inputs */
+.course-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.course-inputs input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Director Date Row */
+.director-date-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.signature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.signature-line {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Watermark Text */
+.certificate-watermark-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 90px;
+  color: #000;
+  opacity: 0.05;
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  font-weight: 900;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Download Button at Bottom */
+.download-btn {
+  display: block;
+  margin: 40px auto 0;
+  width: 220px;
+  font-size: 17px;
+}
