@@ -84,6 +84,11 @@ const TranscriptCertificate = () => {
       pdf.save("transcript.pdf");
     });
   };
+  const formatDate = (dateString) => {
+    if (!dateString) return "";
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
 
   return (
     <div className="container">
@@ -223,11 +228,11 @@ const TranscriptCertificate = () => {
           </p>
           <p>
             <strong>School Start Date:</strong>{" "}
-            {formData.startDate || "Start Date"}
+            {formatDate(formData.startDate) || "Start Date"}
           </p>
           <p>
             <strong>Graduation Date:</strong>{" "}
-            {formData.graduationDate || "Graduation Date"}
+            {formatDate(formData.graduationDate) || "Graduation Date"}
           </p>
         </div>
 
@@ -303,7 +308,8 @@ const TranscriptCertificate = () => {
             </div>
           </div>
           <p>
-            <strong>Date Issued:</strong> {formData.dateIssued || "Date"}
+            <strong>Date Issued:</strong>{" "}
+            {formatDate(formData.dateIssued) || "Date"}
           </p>
         </div>
       </div>
